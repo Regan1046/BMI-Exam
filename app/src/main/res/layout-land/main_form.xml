@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/measurementsCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/details_title" android:textSize="19sp" android:textColor="@color/ink" android:textStyle="bold"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/context_hint" android:textSize="11sp" android:textColor="@color/muted" android:id="@+id/contextHint" android:layout_marginTop="5dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false" android:layout_marginTop="12dp">
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginEnd="12dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/height_label" android:textSize="13sp" android:textColor="@color/ink" android:textStyle="bold" android:labelFor="@id/heightInput"/>
+            <EditText android:id="@+id/heightInput" style="@style/InputField" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="6dp" android:hint="@string/height_hint" android:inputType="numberDecimal" android:maxLength="7" android:textSize="18sp" android:padding="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginEnd="12dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/weight_label" android:textSize="13sp" android:textColor="@color/ink" android:textStyle="bold" android:labelFor="@id/weightInput"/>
+            <EditText android:id="@+id/weightInput" style="@style/InputField" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="6dp" android:hint="@string/weight_hint" android:inputType="numberDecimal" android:maxLength="7" android:textSize="18sp" android:padding="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginEnd="0dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/age_label" android:textSize="13sp" android:textColor="@color/ink" android:textStyle="bold" android:labelFor="@id/ageInput"/>
+            <EditText android:id="@+id/ageInput" style="@style/InputField" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="6dp" android:hint="@string/age_hint" android:inputType="number" android:maxLength="7" android:textSize="18sp" android:padding="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="4dp">
+        <TextView android:layout_width="72dp" android:layout_height="wrap_content" android:text="@string/gender" android:textColor="@color/ink" android:textSize="13sp" android:textStyle="bold"/>
+        <RadioGroup android:id="@+id/genderInput" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:orientation="horizontal" android:saveEnabled="false">
+            <RadioButton android:id="@+id/maleOption" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:saveEnabled="false" android:text="@string/male" android:textSize="15sp" android:textColor="@color/ink"/>
+            <RadioButton android:id="@+id/femaleOption" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:saveEnabled="false" android:text="@string/female" android:textSize="15sp" android:textColor="@color/ink"/>
+        </RadioGroup>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/gender_error" android:textSize="12sp" android:textColor="@color/danger" android:id="@+id/genderError" android:visibility="gone" android:accessibilityLiveRegion="polite"/>
+    <Button android:id="@+id/calculateButton" style="@style/PrimaryButton" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/calculate" android:textAllCaps="false" android:textColor="@color/white" android:layout_marginTop="10dp"/>
+</LinearLayout>

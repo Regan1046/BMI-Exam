@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="history_title">BMI 历史</string>
+    <string name="history_trend">BMI 变化趋势</string>
+    <string name="history_unit">BMI（千克/米²）</string>
+    <string name="history_daily">每天显示最近一次计算结果。</string>
+    <string name="history_records">每日记录</string>
+    <string name="history_empty">暂无 BMI 记录</string>
+    <string name="history_start">计算一次 BMI，即可开始记录。</string>
+    <string name="history_loading">正在加载 BMI 历史…</string>
+    <string name="history_error">无法加载 BMI 历史。</string>
+    <string name="history_retry">重试</string>
+    <string name="history_chart_desc">从 %1$s 到 %2$s 的 BMI 折线图。具体数值见下方记录。</string>
+    <string name="history_chart_one">%1$s 的单条 BMI 记录。具体数值见下方记录。</string>
+</resources>

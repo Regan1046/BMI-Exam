@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/advice_title"
+        android:textColor="@color/ink"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/adviceStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:accessibilityLiveRegion="polite"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/advice_share"
+        android:textColor="@color/ink"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/adviceProgress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:importantForAccessibility="no"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/adviceButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/advice_generate"
+        android:textAllCaps="false"
+        android:textColor="@color/teal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/advice_note"
+        android:textColor="@color/muted"
+        android:textSize="12sp" />
+</LinearLayout>

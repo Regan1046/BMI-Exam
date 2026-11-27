@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="history_title">BMI history</string>
+    <string name="history_trend">BMI over time</string>
+    <string name="history_unit">BMI (kg/m²)</string>
+    <string name="history_daily">Shows your latest result for each day.</string>
+    <string name="history_records">Daily results</string>
+    <string name="history_empty">No BMI results yet</string>
+    <string name="history_start">Calculate your BMI to start tracking it here.</string>
+    <string name="history_loading">Loading BMI history…</string>
+    <string name="history_error">Could not load BMI history.</string>
+    <string name="history_retry">Try again</string>
+    <string name="history_chart_desc">BMI line chart from %1$s to %2$s. Values are listed below.</string>
+    <string name="history_chart_one">BMI chart with one result on %1$s. The value is listed below.</string>
+</resources>

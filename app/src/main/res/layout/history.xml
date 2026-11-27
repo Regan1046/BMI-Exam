@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/screenRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/historyList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp"
+            android:scrollbarStyle="outsideInset"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/historyStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_card"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ProgressBar
+                android:id="@+id/historyLoading"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="12dp"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/historyMessage"
+                style="@style/SectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="polite"
+                android:gravity="center"
+                android:text="@string/history_loading" />
+
+            <TextView
+                android:id="@+id/historyHint"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="@string/history_start"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/historyRetry"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="48dp"
+                android:text="@string/history_retry"
+                android:textAllCaps="false"
+                android:textColor="@color/teal"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/contextAdult" android:title="@string/example_adult" />
+    <item android:id="@+id/contextChild" android:title="@string/example_child" />
+    <item android:id="@+id/contextClear" android:title="@string/clear_details" />
+</menu>
